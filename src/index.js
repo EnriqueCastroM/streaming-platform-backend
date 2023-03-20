@@ -1,6 +1,7 @@
 import './database.js'
 import server from './server.js'
+const PORT = process.env.PORT || 3977;
 
-server.start({ port: 3000 }, ({ port }) => {
-  console.log(`Server is running on PORT ${port}`)
+server.start({ PORT }, ({ port }) => {
+  console.log(`Server is running on PORT ${PORT}`)
 })
