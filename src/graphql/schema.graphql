@@ -1,6 +1,6 @@
 type Query {
-    getMovies: [Movie]
-    login(email: String, password: String): String
+  login(email: String!, password: String!): String
+  getMovies: [Movie]
 }
 
 type Mutation {
